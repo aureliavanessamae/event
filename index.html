@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovation Summit 2023</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                            800: '#6b21a8',
+                            900: '#581c87',
+                        },
+                        secondary: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f9a8d4',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            800: '#9d174d',
+                            900: '#831843',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-primary-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fas fa-robot text-2xl mr-2"></i>
+                    <span class="font-bold text-xl">Tech Summit</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-primary-300">About</a>
+                    <a href="#speakers" class="hover:text-primary-300">Speakers</a>
+                    <a href="#schedule" class="hover:text-primary-300">Schedule</a>
+                    <a href="#register" class="hover:text-primary-300">Register</a>
+                </nav>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary-700 to-secondary-500 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Tech Innovation Summit 2023</h1>
+            <p class="text-xl md:text-2xl mb-8">Exploring the Future of Technology</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#register" class="bg-white text-primary-800 font-bold py-3 px-8 rounded-full hover:bg-primary-100 transition duration-300">Register Now</a>
+                <a href="#about" class="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-primary-800 transition duration-300">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About The Event</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tech Conference" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-800">Join the most anticipated tech event of the year</h3>
+                    <p class="text-gray-600 mb-4">The Tech Innovation Summit brings together industry leaders, innovators, and tech enthusiasts to explore the latest trends and breakthroughs in technology.</p>
+                    <p class="text-gray-600 mb-6">This year's theme focuses on artificial intelligence, blockchain, and sustainable tech solutions for the future.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-calendar-day text-primary-600 mr-2"></i>
+                            <span>November 15-17, 2023</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary-600 mr-2"></i>
+                            <span>San Francisco, CA</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-primary-600 mr-2"></i>
+                            <span>1000+ Attendees</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-microphone text-primary-600 mr-2"></i>
+                            <span>30+ Speakers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="py-16 bg-secondary-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Featured Speakers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Speaker 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Speaker 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dr. Sarah Johnson</h3>
+                        <p class="text-primary-600 mb-4">AI Research Director at TechFuture</p>
+                        <p class="text-gray-600">Leading expert in machine learning and neural networks with over 15 years of experience in AI development.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-primary-600 hover:text-primary-800"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-primary-600 hover:text-primary-800"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Speaker 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Speaker 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Michael Chen</h3>
+                        <p class="text-primary-600 mb-4">CTO at BlockChain Solutions</p>
+                        <p class="text-gray-600">Pioneer in blockchain technology and decentralized applications, with multiple patents in distributed systems.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-primary-600 hover:text-primary-800"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-primary-600 hover:text-primary-800"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Speaker 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Speaker 3" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">David Rodriguez</h3>
+                        <p class="text-primary-600 mb-4">Head of Sustainability at GreenTech</p>
+                        <p class="text-gray-600">Innovator in sustainable technology solutions, focusing on reducing the carbon footprint of tech infrastructure.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-primary-600 hover:text-primary-800"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-primary-600 hover:text-primary-800"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="text-primary-700 font-semibold hover:text-primary-900">View All Speakers <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Event Schedule</h2>
+            <div class="max-w-3xl mx-auto">
+                <!-- Day 1 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-6 text-primary-800 border-b-2 border-primary-200 pb-2">Day 1: November 15</h3>
+                    <div class="space-y-4">
+                        <div class="bg-secondary-50 p-4 rounded-lg">
+                            <div class="flex flex-col md:flex-row md:items-center">
+                                <div class="md:w-1/4 font-bold text-primary-700">09:00 - 10:00</div>
+                                <div class="md:w-3/4">
+                                    <h4 class="font-semibold">Opening Keynote</h4>
+                                    <p class="text-gray-600">Dr. Sarah Johnson - "The Future of AI"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-secondary-50 p-4 rounded-lg">
+                            <div class="flex flex-col md:flex-row md:items-center">
+                                <div class="md:w-1/4 font-bold text-primary-700">10:30 - 12:00</div>
+                                <div class="md:w-3/4">
+                                    <h4 class="font-semibold">Blockchain Workshop</h4>
+                                    <p class="text-gray-600">Michael Chen - Hands-on session</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Day 2 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-6 text-primary-800 border-b-2 border-primary-200 pb-2">Day 2: November 16</h3>
+                    <div class="space-y-4">
+                        <div class="bg-secondary-50 p-4 rounded-lg">
+                            <div class="flex flex-col md:flex-row md:items-center">
+                                <div class="md:w-1/4 font-bold text-primary-700">09:30 - 11:00</div>
+                                <div class="md:w-3/4">
+                                    <h4 class="font-semibold">Sustainable Tech Panel</h4>
+                                    <p class="text-gray-600">David Rodriguez and guests</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-16 bg-primary-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-6">Register Now</h2>
+                <p class="text-center mb-12 max-w-2xl mx-auto">Secure your spot at the Tech Innovation Summit 2023. Limited seats available!</p>
+                
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-primary-800 p-8 flex items-center">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Why Attend?</h3>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle mt-1 mr-2 text-primary-300"></i>
+                                        <span>Network with industry leaders</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle mt-1 mr-2 text-primary-300"></i>
+                                        <span>Hands-on workshops</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle mt-1 mr-2 text-primary-300"></i>
+                                        <span>Exclusive access to new tech</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle mt-1 mr-2 text-primary-300"></i>
+                                        <span>Career opportunities</span>
+                                    </li>
+                                </ul>
+                                <div class="mt-8">
+                                    <h4 class="font-bold mb-2">Pricing</h4>
+                                    <p class="text-3xl font-bold">$299 <span class="text-lg font-normal text-primary-300">Early Bird</span></p>
+                                    <p class="text-primary-300">$399 after October 15</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8 text-gray-800">
+                            <form id="registrationForm" class="space-y-4">
+                                <div>
+                                    <label for="name" class="block font-medium mb-1">Full Name</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block font-medium mb-1">Email</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
+                                </div>
+                                <div>
+                                    <label for="company" class="block font-medium mb-1">Company/Organization</label>
+                                    <input type="text" id="company" name="company" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
+                                </div>
+                                <div>
+                                    <label for="tickets" class="block font-medium mb-1">Number of Tickets</label>
+                                    <select id="tickets" name="tickets" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5+</option>
+                                    </select>
+                                </div>
+                                <div class="pt-2">
+                                    <button type="submit" class="w-full bg-primary-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-primary-700 transition duration-300">
+                                        Register Now
+                                    </button>
+                                </div>
+                            </form>
+                            <div id="successMessage" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-lg">
+                                <i class="fas fa-check-circle mr-2"></i> Thank you for registering! A confirmation email has been sent to your address.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-robot text-2xl mr-2 text-primary-400"></i>
+                        <span class="font-bold text-xl">Tech Summit</span>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">The premier event for technology innovation and networking.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-bold mb-4 text-lg">Event</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Speakers</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Schedule</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Venue</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4 text-lg">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">LinkedIn</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Instagram</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Facebook</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4 text-lg">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Privacy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Terms</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Tech Innovation Summit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Submission Script -->
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            const tickets = document.getElementById('tickets').value;
+            
+            // Here you would typically send this data to a server
+            // For demonstration, we'll simulate a successful submission
+            console.log('Form submitted:', { name, email, company, tickets });
+            
+            // Simulate sending email (in a real app, this would be server-side)
+            setTimeout(() => {
+                // Show success message
+                document.getElementById('successMessage').classList.remove('hidden');
+                document.getElementById('registrationForm').reset();
+                
+                // In a real application, you would:
+                // 1. Send the form data to your backend
+                // 2. The backend would process the registration
+                // 3. The backend would send a confirmation email using a service like:
+                //    - SendGrid
+                //    - Mailgun
+                //    - AWS SES
+                //    - Or your own SMTP server
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
